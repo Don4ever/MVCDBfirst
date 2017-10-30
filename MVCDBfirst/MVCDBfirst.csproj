@@ -161,6 +161,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\myDB.cs" />
     <Compile Include="Models\post.cs" />
+    <Compile Include="Models\resource.cs" />
     <Compile Include="Models\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

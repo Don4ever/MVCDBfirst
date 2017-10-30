@@ -9,7 +9,7 @@ namespace MVCDBfirst.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(MVCDBfirst.Models.myDB context)

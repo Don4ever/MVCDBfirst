@@ -15,5 +15,6 @@ namespace MVCDBfirst.Models
         }
         public DbSet<user> users { get; set; }
         public DbSet<post> posts { get; set; }
+        public DbSet<resource> resources { get; set; }
     }
 }
