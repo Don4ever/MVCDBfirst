@@ -1,0 +1,13 @@
+﻿
+<div>
+    @{
+        MVCDBfirst.Models.user emp = (MVCDBfirst.Models.user)
+        ViewData["Employee"];
+    }
+
+    <b>Employee Details </b><br />
+    Employee ID-Name : @(emp.user_id +"-"+ emp.user_name) <br />
+    Employee password: @emp.password
+</div>
+<h2>test</h2>
+

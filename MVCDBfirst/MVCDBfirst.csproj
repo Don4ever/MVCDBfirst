@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\postsController.cs" />
+    <Compile Include="Controllers\testController.cs" />
     <Compile Include="Controllers\usersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -159,10 +160,10 @@
       <DependentUpon>201710301327460_myDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\myDB.cs" />
-    <Compile Include="Models\post.cs" />
-    <Compile Include="Models\resource.cs" />
-    <Compile Include="Models\user.cs" />
+    <Compile Include="Models\DataModel\myDB.cs" />
+    <Compile Include="Models\ViewModel\post.cs" />
+    <Compile Include="Models\ViewModel\resource.cs" />
+    <Compile Include="Models\ViewModel\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +213,7 @@
     <Content Include="Views\posts\Details.cshtml" />
     <Content Include="Views\posts\Edit.cshtml" />
     <Content Include="Views\posts\Index.cshtml" />
+    <Content Include="Views\test\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
