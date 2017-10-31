@@ -1,0 +1,22 @@
+﻿
+@model IEnumerable<MVCDBfirst.Models.user>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (var itm in Model)
+    {
+        <li>
+            <label>@(itm.user_name+"-"+itm.password)</label>
+
+        </li>
+
+    }
+
+
+
+</ul>

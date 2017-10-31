@@ -9,6 +9,7 @@ namespace MVCDBfirst.Controllers
 {
     public class vmController : Controller
     {
+        
         // GET: test
         public ActionResult Index()
         {
@@ -21,5 +22,7 @@ namespace MVCDBfirst.Controllers
             ViewData["Employee"] = emp;
             return View("vm");
         }
+        // GET: test
+        
     }
 }
