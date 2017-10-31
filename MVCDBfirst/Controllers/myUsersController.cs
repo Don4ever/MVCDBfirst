@@ -13,7 +13,10 @@ namespace MVCDBfirst.Controllers
         // GET: myUsers
         public ActionResult Index()
         {
+
             List<user> us = new List<user>();
+
+            // Linq query
             us = (from n in ndb.users select n).ToList();
 
 
