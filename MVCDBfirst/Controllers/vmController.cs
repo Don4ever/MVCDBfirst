@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace MVCDBfirst.Controllers
 {
-    public class testController : Controller
+    public class vmController : Controller
     {
         // GET: test
         public ActionResult Index()
@@ -19,7 +19,7 @@ namespace MVCDBfirst.Controllers
             emp.user_name = "Sukesh";
 
             ViewData["Employee"] = emp;
-            return View("test");
+            return View("vm");
         }
     }
 }

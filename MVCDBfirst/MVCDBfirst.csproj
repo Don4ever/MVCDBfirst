@@ -150,7 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\postsController.cs" />
-    <Compile Include="Controllers\testController.cs" />
+    <Compile Include="Controllers\vmController.cs" />
     <Compile Include="Controllers\usersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -213,7 +213,7 @@
     <Content Include="Views\posts\Details.cshtml" />
     <Content Include="Views\posts\Edit.cshtml" />
     <Content Include="Views\posts\Index.cshtml" />
-    <Content Include="Views\test\test.cshtml" />
+    <Content Include="Views\vm\vm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
