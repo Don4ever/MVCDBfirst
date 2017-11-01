@@ -14,13 +14,28 @@ namespace MVCDBfirst.Controllers
         public ActionResult Index()
         {
 
-            List<user> us = new List<user>();
+            List<user> u = ndb.users.Where(x => x.user_id == 1).ToList();
 
-            // Linq query
-            us = (from n in ndb.users select n).ToList();
+            // var result = bd.users.Where(x => x.user_id > 1).Distinct();
+
+            var id = 0;
+            foreach (var i in u)
+            {
+                id = i.user_id;
+
+            }
 
 
-            return View(us);
+            user emp = new user();
+            emp.user_id = u[0].user_id;
+            emp.password = u[0].password;
+            emp.user_name = u[0].user_name;
+
+            ViewData["Employee"] = emp;
+          
+
+
+            return View();
         }
     }
 }

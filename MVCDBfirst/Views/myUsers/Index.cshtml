@@ -7,11 +7,23 @@
 
 <h2>Index</h2>
 
+
+
+<div>
+    @{
+        MVCDBfirst.Models.user emp = (MVCDBfirst.Models.user)
+        ViewData["Employee"];
+    }
+
+    <b>Employee Details </b><br />
+    Employee Name : @(emp.user_id+ "-"+emp.user_name )<br />
+    Employee Salary: @emp.password
+</div>
 <ul>
-    @foreach (var itm in Model)
+    
     {
         <li>
-            <label>@(itm.user_name+"-"+itm.password)</label>
+          
 
         </li>
 
