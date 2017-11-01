@@ -1,0 +1,41 @@
+﻿
+@model MVCDBfirst.Models.ViewModel.emp
+
+
+   <p>
+        @(Model.emp_id +" "+ Model.us_name+" "+ Model.pass)
+   </p>
+    
+
+
+<h2>Index</h2>
+
+
+
+<div>
+
+
+
+
+    @*@{
+        MVCDBfirst.Models.ViewModel.emp e = (MVCDBfirst.Models.ViewModel.emp)
+        ViewData["Employee"];
+    }
+
+    <b>Employee Details </b><br />
+    Employee Name : @(e.emp_id + "-" + e.us_name )<br />
+    Employee Salary: @e.pass*@
+</div>
+<ul>
+
+    {
+    <li>
+
+
+    </li>
+
+    }
+
+
+
+</ul>
